@@ -25,7 +25,8 @@
     "lint:build": "npm run lint -- --max-warnings 0",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "postversion": "git push && git push --tags && npm publish --access=public",
-    "version": "npm run build && npm run changelog && git add -A"
+    "version": "npm run build && npm run changelog && git add -A",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@fczbkk/eslint-config": "^1.0.0",
